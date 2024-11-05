@@ -1,0 +1,7 @@
+com/ibb/dao/FoodDao.class
+com/ibb/util/GConnection.class
+com/ibb/servlet/DatabaseServlet.class
+com/ibb/ctrl/AdressController.class
+com/ibb/model/Adress.class
+com/ibb/dao/AdressDao.class
+com/ibb/model/Food.class
