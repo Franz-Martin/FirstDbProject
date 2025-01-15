@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean id="adressCtrl" class="com.ibb.ctrl.AdressController" scope="session" />
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +13,13 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <jsp:forward page="/myDB" />
+        <% 
+        out.print("<p>Anzahl Adressen:"+adressCtrl.getAllAdresses().size()+"</p>");
+        
+        %>
         <a href="adress.jsp">Adressen</a>
+        <form action="create.jsp">
+            <input type="submit" value="create Adresses" />
+        </form>
     </body>
 </html>

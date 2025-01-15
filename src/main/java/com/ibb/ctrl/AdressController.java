@@ -4,6 +4,7 @@
  */
 package com.ibb.ctrl;
 
+import com.github.javafaker.Faker;
 import com.ibb.dao.AdressDao;
 import com.ibb.model.Adress;
 import java.sql.SQLException;
@@ -21,15 +22,25 @@ public class AdressController {
 
     public AdressController() {
         adressDao = new AdressDao();
+//        if(getAllAdresses().size()<10){
+//            createAdress();
+//        }
     }
 
     public List<Adress> getAllAdresses() {
 
-        return adressDao.getAdress("where");
+        return adressDao.getAdress("A");
 
     }
 
     
+    public void createAdress(){
+        Faker f=new Faker();
+        for (int i = 0; i < 10; i++) {
+            Adress adress=new Adress(f.address().cityName(), f.address().firstName(), f.address().lastName());
+            adressDao.save(adress);
+        }
+    }
     
     
 }

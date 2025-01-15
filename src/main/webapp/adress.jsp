@@ -6,7 +6,7 @@
 
 <%@page import="com.ibb.model.Adress"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="adressCtrl" class="com.ibb.ctrl.AdressController" scope="page" />
+<jsp:useBean id="adressCtrl" class="com.ibb.ctrl.AdressController" scope="session" />
 <!DOCTYPE html>
 <html>
     <head>

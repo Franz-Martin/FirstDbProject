@@ -17,6 +17,12 @@ public class Adress {
 
     public Adress() {
     }
+
+    public Adress(String ort, String vorname, String nachname) {
+        this.ort = ort;
+        this.vorname = vorname;
+        this.nachname = nachname;
+    }
     
     
     
