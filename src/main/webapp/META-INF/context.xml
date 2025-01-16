@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/FirstDbProject">
+<Resource auth="Container" 
+          driverClassName="com.mysql.cj.jdbc.Driver" 
+          global="jdbc/foodshop" 
+          maxActive="100" 
+          maxIdle="30" 
+          maxWait="10000" 
+          name="jdbc/foodshop" 
+          password="geheim" 
+          type="javax.sql.DataSource" 
+          url="jdbc:mysql://localhost:3306/foodshop" 
+          username="franz"/>
+</Context>

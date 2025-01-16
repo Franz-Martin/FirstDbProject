@@ -30,17 +30,23 @@ public  class GConnection {
      * @return SQL Connection oder null wenn Fehler.
      */
     public Connection getConnection() {
+        Connection con=null;
         try {
 
-            Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/foodshop","root", "");
-           
-           
+            //Connection conn=DriverManager.getConnection("jdbc:mariadb://localhost:3306/foodshop","root", "");
+            Context ctx=new InitialContext();
+            //Diese Anweisung ist für Glassfisch bzw Payara
+            //DataSource ds=(DataSource) ctx.lookup("jdbc/foodshop");
+            DataSource ds=(DataSource) ctx.lookup("java:/comp/env/jdbc/foodshop");
+            con=ds.getConnection();
             //conn.setAutoCommit(false);
-            return conn;
+            return con;
 
         } catch (SQLException ex) {
             Logger.getLogger(GConnection.class.getName()).log(Level.SEVERE, null, ex);
-        } 
+        } catch (NamingException ex) { 
+            Logger.getLogger(GConnection.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return null;
     }
 }

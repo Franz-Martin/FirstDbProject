@@ -2,6 +2,7 @@
 /home/trainer/NetBeansProjects/FirstDbProject/src/main/java/com/ibb/ctrl/AdressController.java
 /home/trainer/NetBeansProjects/FirstDbProject/src/main/java/com/ibb/model/Adress.java
 /home/trainer/NetBeansProjects/FirstDbProject/src/main/java/com/ibb/dao/FoodDao.java
+/home/trainer/NetBeansProjects/FirstDbProject/src/main/java/com/ibb/ctrl/SessionEjb.java
 /home/trainer/NetBeansProjects/FirstDbProject/src/main/java/com/ibb/model/Food.java
 /home/trainer/NetBeansProjects/FirstDbProject/src/main/java/com/ibb/servlet/DatabaseServlet.java
 /home/trainer/NetBeansProjects/FirstDbProject/src/main/java/com/ibb/util/GConnection.java

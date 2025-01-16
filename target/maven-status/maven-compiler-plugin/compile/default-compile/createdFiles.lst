@@ -5,3 +5,4 @@ com/ibb/ctrl/AdressController.class
 com/ibb/model/Adress.class
 com/ibb/dao/AdressDao.class
 com/ibb/model/Food.class
+com/ibb/ctrl/SessionEjb.class
